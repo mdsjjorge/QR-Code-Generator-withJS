@@ -7,18 +7,21 @@
     <title>QRCode Generator with JavaScript</title>
 </head>
 <body>
-    <h1>QRCode generator</h1>
-    <p>
-        "This text can be <strong>anything</strong>, 
-        for example URL, contact information, a telephone number, 
-        even a poem!" Google Charts
-    </p>
-    
-    <textarea name="content" cols="89" rows="5"></textarea>
-    <br>
-    <button onClick="QRCodeGenerate()">Generate</button>
-    <br>
-    <img id="QRCodeImg">
+        <h1>QRCode generator</h1>
+        <p>
+            "This text can be <strong>anything</strong>, 
+            for example URL, contact information, a telephone number, 
+            even a poem!" Google Charts
+        </p>
+        
+        <textarea name="content" cols="89" rows="5" id="QRContent"></textarea>
+        <br>
+        <button onclick="QRCodeGenerate()">Generate</button>
+        <br>
+        <img id="QRImg">
+
+        <script src="main.js"></script>
+
     
 </body>
 </html>
