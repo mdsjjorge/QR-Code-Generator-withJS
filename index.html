@@ -5,23 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QRCode Generator with JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-        <h1>QRCode generator</h1>
-        <p>
-            "This text can be <strong>anything</strong>, 
-            for example URL, contact information, a telephone number, 
-            even a poem!" Google Charts
-        </p>
-        
-        <textarea name="content" cols="89" rows="5" id="QRContent"></textarea>
-        <br>
-        <button onclick="QRCodeGenerate()">Generate</button>
-        <br>
-        <img id="QRImg">
+<!-- ==================================================================
+header
+=================================================================== -->
+        <header>
+            <nav class="nav-container">
+                <h1 class="nav-container-psdt">QRCode Generator</h1>
+                <span >
+                    <p>GitHub repo => {            
+                        <button class="button" onclick="location.href='https://github.com/mdsjjorge/QR-Code-Generator-withJS'" type="button">
+                            <p>Check</p>
+                        </button> 
+                    }
+                    </p>
+                </span>
+            </nav>
+        </header>
+<!-- ==================================================================
+main
+=================================================================== -->   
+        <main>
+            <article class="main-container">
+                <section>
+                    <p>
+                        "This text can be <strong>anything</strong>, 
+                        for example URL, contact information, a telephone number, 
+                        even a poem!" Google Charts
+                    </p>
+                    
+                    <textarea name="content" cols="89" rows="5" id="QRContent"></textarea>
+                    <br>
+                    <button class="button" onclick="QRCodeGenerate()">Generate</button>
+                    <br>
+                </section>
+                <section class="QR-result">
+                    <img id="QRImg">
+                </section>
+            </article>    
+        </main>
+<!-- ==================================================================
+footer
+=================================================================== -->   
+        <footer>
+            <div class="jm-footer">
+                <span>
+                    <p>Reference:</p>
+                </span>
+                <ul>
+                    <li><a target="_blank" href="https://developers.google.com/chart/infographics/docs/qr_codes"> Google APIs</a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/watch?v=Oxps8ydsaS0"> Universo TI</a></li>
+                </ul>                
+            </div>
+            <span >
+                <p class="jm-footer-copy">
+                    <a  target="_blank" href="https://github.com/mdsjjorge"><img width="30px" src="icon/github.png" alt="github"></a>
+                    <a  target="_blank" href="https://www.linkedin.com/in/mdsjjorge/"><img width="30px" src="icon/linkedin.png" alt="github"></a>
+                    &copy; Jorge Mendonça
+                </p>
+            </span>
+        </footer>
 
-        <script src="main.js"></script>
-
-    
+        <script src="main.js"></script>    
 </body>
 </html>
